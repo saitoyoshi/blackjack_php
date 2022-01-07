@@ -1,0 +1,14 @@
+/lib/bak
+/vendor
+/xdebug
+.phpcs.xml.swp
+.phpunit.result.cache
+launch.json
+composer.json
+todos
+spec.txt
+*.output
+phpcs.xml
+phpmd.xml
+phpstan.neon
+phpunit.xml
