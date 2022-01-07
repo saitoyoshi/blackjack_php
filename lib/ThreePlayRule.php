@@ -17,7 +17,6 @@ class ThreePlayRule implements Rule
             echo  $name . 'の得点は' . $score . ' ' . $player->getCurrentStatusStr() . PHP_EOL;
         }
         if (!empty($computers)) {
-
             foreach ($computers as $computer) {
                 $name = $computer->getName();
                 $score = $computer->getHandScore();

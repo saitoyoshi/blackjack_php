@@ -12,7 +12,6 @@ class TwoPlayRule implements Rule
             echo  $name . 'の得点は' . $score . ' ' . $player->getCurrentStatusStr() . PHP_EOL;
         }
         if (!empty($computers)) {
-
             $computer = $computers[0];
             $computerName = $computer->getName();
             $computerScore = $computer->getHandScore();
