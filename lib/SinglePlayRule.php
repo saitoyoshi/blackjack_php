@@ -35,8 +35,9 @@ class SinglePlayRule implements Rule
             }
             echo PHP_EOL;
         }
+        $playerhasSplited = (count($players) === 2);
         //消えゆく別れたハンドからチップを回収
-        if (count($players) === 2) {
+        if ($playerhasSplited) {
             $players[0]->addChip($players[1]->getOwnedChip());
         }
     }

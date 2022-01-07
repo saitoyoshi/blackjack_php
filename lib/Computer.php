@@ -8,10 +8,6 @@ require_once(__DIR__ . '/Deck.php');
 class Computer extends Player implements Human
 {
 
-    // public function initChip(): void
-    // {
-    //     echo 'this is initChip()' . PHP_EOL;
-    // }
     public function decidePlayerBet(): void
     {
 
@@ -24,7 +20,7 @@ class Computer extends Player implements Human
     }
     public function drawCardsWhileYes(Deck $deck): void
     {
-        while (!$this->isOverNum($this->getHandScore(), 18)) {
+        while (!$this->isOverNum($this->getHandScore(), 16)) {
             echo $this->getName() . 'の現在の得点は' . $this->getHandScore() . 'です。'
                 . PHP_EOL;
             $this->drawCards($deck);
